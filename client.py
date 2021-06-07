@@ -5,10 +5,10 @@ from main import EYOrand
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN")
-GUILD = os.getenv("DISCORD_GUILD")
-CHANNEL = os.getenv("CLAN_TRIUMPHS_ID")
-USERNAME = os.getenv("USERNAME_CHECK")
+TOKEN = os.environ['DISCORD_TOKEN']
+GUILD = os.environ['DISCORD_GUILD']
+CHANNEL = os.environ['CLAN_TRIUMPHS_ID']
+USERNAME = os.environ['USERNAME_CHECK']
 
 client = discord.Client()
 
