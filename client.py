@@ -3,6 +3,7 @@ import os
 import discord
 from main import EYOrand
 from dotenv import load_dotenv
+import keep_alive
 
 load_dotenv()
 TOKEN = os.environ['DISCORD_TOKEN']
@@ -32,5 +33,7 @@ async def on_message(message):
         return
 
     await message.channel.send(response)
-
+#runs the local server
+keep_alive.keep_alive()
+#logs into discord
 client.run(TOKEN)

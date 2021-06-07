@@ -1,13 +1,14 @@
 [tool.poetry]
 name = "eyobot"
 version = "0.1.0"
-description = ""
+description = "EYOs upon request"
 authors = ["LeviKalashnikof <<>>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 "discord.py" = "^1.7.2"
 python-dotenv = "^0.17.1"
+Flask = "^2.0.1"
 
 [tool.poetry.dev-dependencies]
 
